@@ -1,0 +1,18 @@
+<!--pages/tab2/tab2.wxml-->
+<view class="con">
+  <view class="category_left">
+    <block wx:for="{{cateData}}" wx:key="id">
+      <view bindtap="onTab" mark:index="{{index}}" class="choose {{index==curIndex?'active':''}}">{{item.name}}</view>
+    </block>
+  </view>
+  <
+    view class="category_right">
+    <image class="headImg" src="{{headImg}}"></image>
+    <text class="name1">{{name}}</text>
+    <view class="product_list">
+      <block wx:for="{{products}}" wx:key="id">
+        <c-product product="{{item}}"></c-product>
+      </block>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,39 @@
+<!--pages/order/order.wxml-->
+<view bindtap="onAddress" wx:if="{{!addressInfo}}" class="address_box">
+  <text class="add_icon">+</text>
+  添加地址
+</view>
+<view bindtap="onAddress" wx:else class="address_box">
+  <view class="info_box">
+    <view class="info_top">
+      <view class="left">
+        <image src="/imgs/icon/user.png"></image>
+        <text>{{addressInfo.userName}}</text>
+      </view>
+      <view class="right">
+        <image src="/imgs/icon/mobile.png"></image>
+        <text>{{addressInfo.mobile}}</text>
+      </view>
+    </view>
+    <view class="address">{{addressInfo.detailAddress}}</view>
+  </view>
+  <view>></view>
+</view>
+<view class="order_list">
+  <block wx:for="{{orderData}}" wx:key="index">
+    <view class="order">
+      <image class="img" src="{{item.imgSrc}}"></image>
+      <view class="order_middle">
+        <view class="name">{{item.name}}</view>
+        <view class="price">{{item.price}}</view>
+      </view>
+      <view class="order_right">×{{item.cou}}</view>
+    </view>
+  </block>
+</view>
+<view class="footer">
+  <view class="account_box">
+    付款合计：
+  </view>
+  <view bindtap="onPay" class="pay {{addressInfo?'':'disable'}}">去付款</view>
+</view>

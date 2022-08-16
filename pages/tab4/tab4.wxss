@@ -1,0 +1,30 @@
+/* pages/tab4/tab4.wxss */
+.header{
+  width: 100%;
+  height: 180rpx;
+  background: #ab9564;
+  display: flex;
+  line-height: 180rpx;
+}
+.avatar{
+  width: 120rpx;
+  height: 120rpx;
+  background: #ccc;
+  border-radius: 50%;
+  margin: 20rpx;
+}
+.nickName{
+  color: white;
+  font-size: 36rpx;
+}
+.address_box{
+  height: 400rpx;
+  width: 100%;
+  flex: 1;
+}
+.address_box view{
+  height: 99rpx;
+  border-bottom: 1px solid #ccc;
+  width: 100%;
+  line-height: 100rpx;
+}

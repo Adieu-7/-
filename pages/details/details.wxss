@@ -1,0 +1,139 @@
+/* pages/details/details.wxss */
+.con{
+  width: 100%;
+  height: 100%;
+  background-color: #F9F9F9;
+  overflow: hidden;
+}
+.fixed_box {
+  position: fixed;
+  top: 50rpx;
+  right: 20rpx;
+}
+.fixed_box .iconfont {
+  font-size: 60rpx;
+}
+.num {
+  display: block;
+  width: 40rpx;
+  height: 40rpx;
+  text-align: center;
+  line-height: 40rpx;
+  color: #fff;
+  background: #ab9564;
+  border-radius: 50%;
+  position: absolute;
+  top: -12rpx;
+  left: -20rpx;
+}
+.head{
+  width: 100%;
+  height: 830rpx;
+  background: white;
+  text-align: center;
+}
+.choose{
+  width: 90%;
+  height: 100rpx;
+  background-color: #AB9564;
+  margin: 0 auto;
+  border-radius: 50rpx;
+  display: flex;
+}
+.choose view{
+  width: 50%;
+  line-height: 100rpx;
+  color: white;
+}
+
+.accTo{
+  font-weight: bold;
+  margin: 30rpx 0 20rpx;
+}
+.accName{
+  font-weight: 600;
+  font-size: 38rpx;
+  margin-bottom: 30rpx;
+}
+.cart{
+  position: relative;
+}
+.flyImg {
+  width: 60rpx;
+  height: 60rpx;
+  position: absolute;
+  right: 46rpx;
+  top: 20rpx;
+  opacity: 0;
+}
+.flyImg.fly{
+  opacity: 1;
+  transition: 4s cubic-bezier(0.31, 1.05, 0.74, 1.39);
+}
+.body{
+  width: 100%;
+  height: 100%;
+  margin-top: 40rpx;
+  background-color: white;
+}
+.tab{
+  width: 100%;
+  height: 80rpx;
+  display: flex;
+  justify-content: space-around;
+  line-height: 80rpx;
+}
+.item{
+  flex: 1;
+  text-align: center;
+}
+.item.active{
+  border-bottom: 1px solid #AB9564;
+  color: #AB9564;
+}
+.change{
+  margin-right: 10rpx;
+}
+.down{
+  margin-left: 20prx;
+}
+.pick text{
+  margin: 0 15rpx;
+}
+.cart text{
+  margin: 0 15rpx;
+}
+.product_detail image{
+  width: 100%;
+  display: block;
+}
+.product_props{
+  width: 74%;
+  padding: 4% 13% 0;
+}
+.prop_name{
+  display: inline-block;
+  width: 100rpx;
+  height: 100%;
+  text-align: center;
+  margin-right: 30rpx;
+}
+.product_props text{
+  margin-bottom: 10rpx;
+}
+.product_save{
+  text-align: center;
+  margin-top: 20rpx;
+  font-weight: bold;
+}
+.animate {
+  animation: scale 200ms linear 1;
+}
+@keyframes scale {
+  0% {
+    font-size: 80rpx;
+  }
+  100% {
+    font-size: 60rpx;
+  }
+}

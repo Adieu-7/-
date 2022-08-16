@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "c-product":"/components/product"
+  },
+  "navigationBarTitleText": "分类"
+}

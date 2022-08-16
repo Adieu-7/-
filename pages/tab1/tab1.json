@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "c-list":"/components/list/index"
+  },
+  "navigationBarTitleText": "杂货商贩"
+}
